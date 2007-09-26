@@ -1,0 +1,50 @@
+========================================================================
+		  Plothon installation instructions
+========================================================================
+
+==== Run the setup.py script. ==========================================
+
+If you have access to your Python distribution (as root superuser or
+because you installed Python yourself), just run
+
+% python setup.py install
+
+(without the '%' command prompt).  If you need to install Plothon in
+your home directory, use this option:
+
+% python setup.py install --home=~
+
+(or replace '~' with the directory of choice).  This latter option
+creates a `lib/python' directory for local Python modules.
+
+For more on Python distutils, see http://docs.python.org/inst/inst.html
+
+==== Make sure Python can find your library. ===========================
+
+If you installed your library in the standard location (no --home
+switch), Python should be able to find it automatically.  Test it with
+
+% python
+Python 2.4.3 (#2, Oct  6 2006, 07:52:30) 
+[GCC 4.0.3 (Ubuntu 4.0.3-1ubuntu5)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import plothon
+
+(There should be no error messages.)
+
+If you installed it in a different location (e.g. --home=~), find the
+library by hand,
+
+% ls -d ~/lib/python/plothon
+
+and add this path to your PYTHONPATH variable.  In your login script,
+add something like
+
+export PYTHONPATH=~/lib/python:$PYTHONPATH
+
+or
+
+setenv PYTHONPATH ~/lib/python:$PYTHONPATH
+
+(You might not be allowed to use the '~' shortcut.)
+
