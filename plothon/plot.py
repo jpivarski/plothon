@@ -960,7 +960,7 @@ class Parametric(Plottable):
       denom = math.sqrt((left.X - right.X)**2 + (left.Y - right.Y)**2)
 
       # if we haven't sampled enough or left fails to be close enough to right, or mid fails to be linear enough...
-      if depth < 3 or (denom == 0 and left.t != right.t) or denom > self.discontinuity_limit**2 or abs(numer/denom) > self.linearity_limit:
+      if depth < 3 or (denom == 0 and left.t != right.t) or denom > self.discontinuity_limit**2 or (denom != 0. and abs(numer/denom) > self.linearity_limit):
 
         # and we haven't sampled too many points
         if depth < self.recursion_limit:
@@ -1263,7 +1263,7 @@ class Scatter(PlottablePoints):
   def __repr__(self):
     return "<plothon.plot.Scatter (%d points) %s>" % (len(self), self.attributes)
   
-  def __init__(self, points, radius=0.75, **attributes):
+  def __init__(self, points, radius=1., **attributes):
     self.points = points
     self.radius = radius
 
@@ -1296,7 +1296,7 @@ class ErrorBars(PlottablePoints):
   def __repr__(self):
     return "<plothon.plot.ErrorBars (%d points) mode=%s %s>" % (len(self), self.mode, self.attributes)
 
-  def __init__(self, points, mode="y", draw_mode=".=|", radius=0.75, cap_length=1, **attributes):
+  def __init__(self, points, mode="y", draw_mode=".=|", radius=1., cap_length=1, **attributes):
     self.points = points
     self.mode = mode
     self.draw_mode = draw_mode
@@ -2525,10 +2525,10 @@ class Plot:
       output.append(ytick_labels)
 
       if self.draw_arrows:
-        leftarrow = svg.SVG("path", d="M 0 0 L 0.5 -1 L -3 0 L 0.5 1 L 0 0 z", stroke="none", fill="black", id=("leftarrow%d" % idnum))
-        toparrow = svg.SVG("path", d="M 0 0 L -1 0.5 L 0 -3 L 1 0.5 L 0 0 z", stroke="none", fill="black", id=("toparrow%d" % idnum))
-        rightarrow = svg.SVG("path", d="M 0 0 L -0.5 -1 L 3 0 L -0.5 1 L 0 0 z", stroke="none", fill="black", id=("rightarrow%d" % idnum))
-        bottomarrow = svg.SVG("path", d="M 0 0 L -1 -0.5 L 0 3 L 1 -0.5 L 0 0 z", stroke="none", fill="black", id=("bottomarrow%d" % idnum))
+        leftarrow = svg.SVG("path", d="M 0 0 L 0.5 -1.2 L -3 0 L 0.5 1.2 L 0 0 z", stroke="none", fill="black", id=("leftarrow%d" % idnum))
+        toparrow = svg.SVG("path", d="M 0 0 L -1.2 0.5 L 0 -3 L 1.2 0.5 L 0 0 z", stroke="none", fill="black", id=("toparrow%d" % idnum))
+        rightarrow = svg.SVG("path", d="M 0 0 L -0.5 -1.2 L 3 0 L -0.5 1.2 L 0 0 z", stroke="none", fill="black", id=("rightarrow%d" % idnum))
+        bottomarrow = svg.SVG("path", d="M 0 0 L -1.2 -0.5 L 0 3 L 1.2 -0.5 L 0 0 z", stroke="none", fill="black", id=("bottomarrow%d" % idnum))
 
         X, Y = datatrans(self.last_xmin, self.last_xaxis)
         (xhatx, xhaty), (yhatx, yhaty) = datatrans.normderiv(self.last_xmin, self.last_xaxis)

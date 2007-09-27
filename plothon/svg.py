@@ -390,7 +390,7 @@ To read an SVG file from disk, call
 
 #####################################################################
 
-def canvas(svg=None, **attributes):
+def canvas(*svgs, **attributes):
   atts = {"width": "400px", "height": "400px", "viewBox": "0 0 100 100", \
           "xmlns": "http://www.w3.org/2000/svg", "xmlns:xlink": "http://www.w3.org/1999/xlink", "version":"1.1", \
           "style": "stroke:black; fill:none; stroke-width:0.25pt; stroke-linejoin:round; font-size:5; text-anchor:middle", \
@@ -398,10 +398,10 @@ def canvas(svg=None, **attributes):
           }
   atts.update(attributes)
 
-  if svg == None:
+  if svgs == None or svgs == ():
     return SVG("svg", **atts)
   else:
-    return SVG("svg", svg, **atts)
+    return SVG("svg", *svgs, **atts)
 
 #####################################################################
 
