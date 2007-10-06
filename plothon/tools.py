@@ -113,7 +113,7 @@ def sigfigsstr(num, n):
 a string."""
   level = roundlevel_nsigfigs(num, n)
   num = round(num, level)
-  format = "%."+str(level)+"f"
+  format = "%."+str(max(level, 0))+"f"
   return format % num
 
 def errpair(num, err, n=2):
@@ -128,7 +128,7 @@ uncertainty (default is two) and return the result as a string."""
   level = roundlevel_nsigfigs(err, n)
   num = round(num, level)
   err = round(err, level)
-  format = "%."+str(level)+"f"
+  format = "%."+str(max(level, 0))+"f"
   return format % num, format % err
 
 ###################################################################################

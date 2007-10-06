@@ -388,7 +388,9 @@ class Plottables:
 
   def __getitem__(self, x): return self.data[x]
 
-  def __setitem__(self, x, value): self.data[x] = value
+  def __setitem__(self, x, value):
+    self.data[x] = value
+    self.flatten()
 
   def __delitem__(self, x): del self.data[x]
 
@@ -1133,7 +1135,11 @@ class PlottablePoints(Plottable):
 
   def remove(self, value): return self.points.remove(value)
 
-  def pop(self, i): return self.points.pop(i)
+  def pop(self, *args):
+    if args == None or len(args) == 0: return self.points.pop()
+    if len(args) == 1: return self.points.pop(args[0])
+    else:
+      raise TypeError, "pop() takes a single index or no arguments."
 
   def reverse(self): return self.points.reverse()
 
