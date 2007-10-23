@@ -17,4 +17,4 @@
 # 
 # Full licence is in the file COPYING and at http://www.gnu.org/copyleft/gpl.html
 
-__all__ = ["plot", "root", "setup", "svg", "tools"]
+__all__ = ["plot", "root", "svg", "tools"]

@@ -926,7 +926,7 @@ class Parametric(Plottable):
     try:
       # the best way to keep all the information while sampling is to make a linked list
       if not (self.low < self.high): raise ValueError, "low must be less than high"
-      low, high = self.Sample(self.low), self.Sample(self.high)
+      low, high = self.Sample(float(self.low)), self.Sample(float(self.high))
       low.link(None, high)
       high.link(low, None)
 
@@ -1014,13 +1014,14 @@ class Parametric(Plottable):
     return PlottablePath(output, **self.attributes)
 
   def last_points(self):
-    if "last_samples" not in self.__dict__ or self.last_samples == None: return []
-    else:
-      output = []
-      for s in self.last_samples:
-        if s.x != None and s.y != None and s.X != None and s.y != None:
-          output.append((s.x, s.y))
-      return output
+    if "last_samples" not in self.__dict__ or self.last_samples == None:
+      raise RuntimeError, "The function has not been evaluated yet (call SVG(), sample(), or PlottablePath())."
+
+    output = []
+    for s in self.last_samples:
+      if s.x != None and s.y != None and s.X != None and s.y != None:
+        output.append((s.x, s.y))
+    return output
 
 #####################################################################
 
@@ -1630,7 +1631,8 @@ symbolTemplates = {"dot": svg.SVG("symbol", svg.SVG("circle", cx=0, cy=0, r=1, s
 
 def make_symbol(template="dot", name=None, **attributes):
   output = copy.deepcopy(symbolTemplates[template])
-  output[0].attributes.update(attributes)
+  for i in output.children:
+    i.attributes.update(attributes)
 
   if name == None: output["id"] = "s%d" % random.randint(0, sys.maxint)
   else: output["id"] = name
@@ -1645,7 +1647,7 @@ class SymbolScatter(PlottablePoints):
   def __repr__(self):
     return "<plothon.plot.SymbolScatter (%d symbols) %s>" % (len(self), self.attributes)
 
-  def __init__(self, points, symbol=None, width=1, height=1, **attributes):
+  def __init__(self, points, symbol=None, width=None, height=None, **attributes):
     self.points = points
     self.width = width
     self.height = height
@@ -1672,7 +1674,10 @@ class SymbolScatter(PlottablePoints):
         self.increment_inner_ranges(x, y)
         self.increment_outer_ranges(X, Y)
       
-      output.append(svg.SVG("use", x=X, y=Y, width=self.width, height=self.height, xlink__href=name))
+      item = svg.SVG("use", x=X, y=Y, xlink__href=name)
+      if width != None: item["width"] = width
+      if height != None: item["height"] = height
+      output.append(item)
       
     return output
 
