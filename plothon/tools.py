@@ -25,7 +25,7 @@ def mean(xlist):
   for x in xlist:
     s += x
     n += 1.
-  return math.sqrt(s2/n)
+  return s/n
 
 def rms(xlist):
   "Get the actual root mean square (not standard deviation!) of a list."
@@ -102,6 +102,7 @@ significant figures.  You can use it like this:
     num = round(num, tools.roundlevel_nsigfigs(num, n))
 
 More often, though, you would use one of roundsig, roundstr, or roundsig_errpair/roundstr_errpair."""
+  if num == 0.: return 1
   return n - int(math.ceil(math.log10(abs(num))))
   
 def sigfigs(num, n):

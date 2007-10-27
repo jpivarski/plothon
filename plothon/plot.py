@@ -28,7 +28,7 @@ class DataTrans:
     if self.name == None: return "<plothon.plot.DataTrans (id %d)>" % id(self)
     else: return "<plothon.plot.DataTrans %s (id %d)>" % (self.name, id(self))
 
-  def __init__(self, function, name=None, globals=None, minusInfinityX=None, plusInfinityX=None, minusInfinityY=None, plusInfinityY=None):
+  def __init__(self, function, globals=None, name=None, minusInfinityX=None, plusInfinityX=None, minusInfinityY=None, plusInfinityY=None):
     if callable(function):
       if function.func_name == "<lambda>": self.name = None
       else: self.name = function.func_name
@@ -70,15 +70,13 @@ class DataTrans:
     except:
       return False
     
-  def derivative(self, x, y, delta=None):
-    if delta == None: delta = epsilon
+  def derivative(self, x, y, delta=1e-12):
     X0, Y0 = self(x, y)
     xhatx, xhaty = self(x + delta, y)
     yhatx, yhaty = self(x, y + delta)
     return (1.*(xhatx - X0)/delta, 1.*(xhaty - Y0)/delta), (1.*(yhatx - X0)/delta, 1.*(yhaty - Y0)/delta)
 
-  def normderiv(self, x, y, delta=None):
-    if delta == None: delta = epsilon
+  def normderiv(self, x, y, delta=1e-12):
     X0, Y0 = self(x, y)
     xhatx, xhaty = self(x + delta, y)
     xhatx, xhaty = xhatx - X0, xhaty - Y0
@@ -126,7 +124,7 @@ class DataTransComplex(DataTrans):
     if self.name == None: return "<plothon.plot.DataTransComplex (id %d)>" % id(self)
     else: return "<plothon.plot.DataTransComplex %s (id %d)>" % (self.name, id(self))
 
-  def __init__(self, function, name=None, globals=None, minusInfinityX=None, plusInfinityX=None, minusInfinityY=None, plusInfinityY=None):
+  def __init__(self, function, globals=None, name=None, minusInfinityX=None, plusInfinityX=None, minusInfinityY=None, plusInfinityY=None):
     if callable(function):
       if function.func_name == "<lambda>": self.name = None
       else: self.name = function.func_name
