@@ -405,6 +405,46 @@ def canvas(*svgs, **attributes):
 
 #####################################################################
 
+def aspect(ratio, plot=None, width=None, height=None, **attributes):
+  if width != None and height != None:
+    raise ValueError, "Cannot specify a width AND a height."
+  if width == None and height == None: height = "400px"
+
+  if width != None:
+    if isinstance(width, (str, unicode)):
+      match = re.search("[0-9\.]+", width)
+      if match == None: raise ValueError, "Cannot parse width."
+      number = match.group()
+      before, after = width[:match.span()[0]], width[match.span()[1]:]
+    else:
+      number = width
+      before, after = "", ""
+    height = "%s%g%s" % (before, float(number)/ratio, after)
+
+  if height != None:
+    if isinstance(height, (str, unicode)):
+      match = re.search("[0-9\.]+", height)
+      if match == None: raise ValueError, "Cannot parse height."
+      number = match.group()
+      before, after = height[:match.span()[0]], height[match.span()[1]:]
+    else:
+      number = height
+      before, after = "", ""
+    width = "%s%g%s" % (before, float(number)*ratio, after)
+
+  atts = attributes
+  atts["width"] = width
+  atts["height"] = height
+  atts["viewBox"] = "%g %g %g %g" % (0, 0, 100*ratio, 100)
+
+  if plot != None:
+    plot.x, plot.y, plot.width, plot.height = 0, 0, 100*ratio, 100
+    return canvas(plot.SVG(), **atts)
+  else:
+    return canvas(**atts)
+
+#####################################################################
+
 def template(fileName, svg, replaceme="REPLACEME"):
   output = load(fileName)
   for i, s in output:
