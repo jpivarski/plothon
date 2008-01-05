@@ -1673,8 +1673,8 @@ class SymbolScatter(PlottablePoints):
         self.increment_outer_ranges(X, Y)
       
       item = svg.SVG("use", x=X, y=Y, xlink__href=name)
-      if width != None: item["width"] = width
-      if height != None: item["height"] = height
+      if self.width != None: item["width"] = width
+      if self.height != None: item["height"] = height
       output.append(item)
       
     return output
