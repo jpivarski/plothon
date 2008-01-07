@@ -1645,7 +1645,7 @@ class SymbolScatter(PlottablePoints):
   def __repr__(self):
     return "<plothon.plot.SymbolScatter (%d symbols) %s>" % (len(self), self.attributes)
 
-  def __init__(self, points, symbol=None, width=None, height=None, **attributes):
+  def __init__(self, points, symbol=None, width=2., height=2., **attributes):
     self.points = points
     self.width = width
     self.height = height
@@ -1673,8 +1673,8 @@ class SymbolScatter(PlottablePoints):
         self.increment_outer_ranges(X, Y)
       
       item = svg.SVG("use", x=X, y=Y, xlink__href=name)
-      if self.width != None: item["width"] = width
-      if self.height != None: item["height"] = height
+      if self.width != None: item["width"] = self.width
+      if self.height != None: item["height"] = self.height
       output.append(item)
       
     return output

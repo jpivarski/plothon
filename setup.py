@@ -28,7 +28,7 @@ if "--with-root" in sys.argv:
 ##################################################################################################
 
 setup(name="Plothon",
-      version="0.1.0",
+      version="0.1.2",
       description="Plothon: Data Analysis and Mathematical PLOTting in pyTHON",
       author="Jim Pivarski",
       author_email="jpivarski@gmail.com",
