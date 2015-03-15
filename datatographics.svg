@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="600pt"
+   height="200pt"
+   id="svg2">
+  <defs
+     id="defs4">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       style="overflow:visible"
+       id="Arrow1Mend">
+      <path
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z "
+         transform="scale(-0.4,-0.4)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         id="path6826" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       style="overflow:visible"
+       id="Arrow2Lend">
+      <path
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.97309,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="matrix(-1.1,0,0,-1.1,5.5,0)"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path6814" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       style="overflow:visible"
+       id="Arrow1Lend">
+      <path
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z "
+         transform="scale(-0.8,-0.8)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         id="path6832" />
+    </marker>
+  </defs>
+  <path
+     d="M 670,81.456241 L 670,136.45624 L 360,136.45624 L 360,116.45624"
+     style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path1397" />
+  <path
+     d="M 110,105 L 160,80"
+     style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path6848" />
+  <path
+     d="M 225,70 L 275,70"
+     style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path6850" />
+  <path
+     d="M 430,70 L 480,70"
+     style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path6854" />
+  <path
+     d="M 540,70 L 595,70"
+     style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path6856" />
+  <path
+     d="M 105,35 L 160,60"
+     style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path6660" />
+  <text
+     x="63.63961"
+     y="38.126881"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     id="text1307"
+     xml:space="preserve"><tspan
+       x="63.63961"
+       y="38.126881"
+       id="tspan1309" /></text>
+  <g
+     id="g5752">
+    <rect
+       width="113.94289"
+       height="38.767574"
+       x="16.021751"
+       y="16.122923"
+       style="opacity:1;color:#000000;fill:#feffd0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.14228654;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect5742" />
+    <text
+       x="72.972656"
+       y="43.234375"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text1315"
+       xml:space="preserve"><tspan
+         x="72.972656"
+         y="43.234375"
+         id="tspan1317">Plottable</tspan></text>
+  </g>
+  <g
+     transform="translate(15.03075,16.97297)"
+     id="g5757">
+    <rect
+       width="59.179104"
+       height="34.054054"
+       x="160.91045"
+       y="34.972973"
+       style="opacity:1;color:#000000;fill:#feffd0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.88238263;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect5744" />
+    <text
+       x="189.63672"
+       y="60"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text1319"
+       xml:space="preserve"><tspan
+         x="189.63672"
+         y="60"
+         id="tspan1321">Plot</tspan></text>
+  </g>
+  <g
+     transform="translate(50,7)"
+     id="g5762">
+    <rect
+       width="150"
+       height="65"
+       x="240"
+       y="30"
+       style="opacity:1;color:#000000;fill:#feffd0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect5746" />
+    <text
+       x="315.92188"
+       y="54.660156"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text1323"
+       xml:space="preserve"><tspan
+         x="315.92188"
+         y="54.660156"
+         id="tspan1325">Pythonized</tspan><tspan
+         x="315.92188"
+         y="84.660156"
+         id="tspan1329">SVG</tspan></text>
+  </g>
+  <g
+     transform="translate(91,5)"
+     id="g5768">
+    <rect
+       width="65"
+       height="65"
+       x="405"
+       y="30"
+       style="opacity:1;color:#000000;fill:#feffd0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect5748" />
+    <text
+       x="436.85547"
+       y="54.660156"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text1333"
+       xml:space="preserve"><tspan
+         x="436.85547"
+         y="54.660156"
+         id="tspan1335">SVG</tspan><tspan
+         x="436.85547"
+         y="84.660156"
+         id="tspan1337">file</tspan></text>
+  </g>
+  <g
+     transform="translate(119,10)"
+     id="g5774">
+    <rect
+       width="115"
+       height="35"
+       x="490"
+       y="40"
+       style="opacity:1;color:#000000;fill:#feffd0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect5750" />
+    <text
+       x="547.93359"
+       y="63.234375"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text1339"
+       xml:space="preserve"><tspan
+         x="547.93359"
+         y="63.234375"
+         id="tspan1341">Inkscape</tspan></text>
+  </g>
+  <g
+     transform="translate(4.939187e-2,68.87708)"
+     id="g5779">
+    <rect
+       width="113.94289"
+       height="38.767574"
+       x="16.021751"
+       y="16.122923"
+       style="opacity:1;color:#000000;fill:#feffd0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.14228654;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect5781" />
+    <text
+       x="72.972656"
+       y="43.234375"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text5783"
+       xml:space="preserve"><tspan
+         x="72.972656"
+         y="43.234375"
+         id="tspan5785">Plottable</tspan></text>
+  </g>
+  <text
+     x="123.15625"
+     y="186.84425"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     id="text7737"
+     xml:space="preserve"><tspan
+       x="123.15625"
+       y="186.84425"
+       id="tspan7739">Turn data into</tspan><tspan
+       x="123.15625"
+       y="216.84425"
+       id="tspan7762">graphical elements</tspan></text>
+  <text
+     x="381"
+     y="185.41568"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     id="text7743"
+     xml:space="preserve"><tspan
+       x="381"
+       y="185.41568"
+       id="tspan7747">Optionally manipulate</tspan><tspan
+       x="381"
+       y="215.41568"
+       id="tspan7751">graphics in a script</tspan></text>
+  <text
+     x="631.07812"
+     y="171.83644"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     id="text7753"
+     xml:space="preserve"><tspan
+       x="631.07812"
+       y="171.83644"
+       id="tspan7755">Optionally tweak</tspan><tspan
+       x="631.07812"
+       y="201.83644"
+       id="tspan7757">graphics by hand,</tspan><tspan
+       x="631.07812"
+       y="231.83644"
+       id="tspan7760">convert format</tspan></text>
+</svg>
